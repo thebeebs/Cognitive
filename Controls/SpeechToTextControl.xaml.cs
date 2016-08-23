@@ -45,6 +45,8 @@ namespace IntelligentKioskSample.Controls
             }
 
             this.dictatedTextBuilder = new StringBuilder();
+            //var language = new Windows.Globalization.Language("en-GB");
+            //TODO: This throws if the user hasen't selected a speech defualt language
             this.speechRecognizer = new SpeechRecognizer();
 
             var dictationConstraint = new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario.Dictation, "dictation");
